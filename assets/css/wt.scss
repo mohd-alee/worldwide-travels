@@ -1,0 +1,22 @@
+$primary-color: #07bdfe;
+$secondary-color: #054175;
+header {
+	background-color: #fff;
+	border-bottom: 1px solid $secondary-color;
+	.site_logo {
+		width: 100px;
+		filter: brightness(0) invert(1);
+	}
+	.nav {
+		.nav-link {
+			color: #fff;
+			text-transform: capitalize;
+			&:hover {
+				color: #fff;
+			}
+			&.active {
+				font-weight: 500;
+			}
+		}
+	}
+}

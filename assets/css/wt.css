@@ -101,4 +101,38 @@
 #hero-section .social-wrapper .social-icons i {
   color: #fff;
   font-size: 20px;
+}
+
+.team-members-wrap .single-member {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.3843137255);
+}
+.team-members-wrap .single-member:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+.team-members-wrap .single-member i,
+.team-members-wrap .single-member .member-name,
+.team-members-wrap .single-member .member-designation {
+  color: #000;
+}
+.team-members-wrap .single-member i {
+  font-size: 40px;
+  border: 2px solid #000;
+  padding: 15px;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+.team-members-wrap .single-member .member-name {
+  text-transform: capitalize;
+}
+.team-members-wrap .single-member .member-designation {
+  font-size: 18px;
+  font-weight: 500;
 }/*# sourceMappingURL=wt.css.map */

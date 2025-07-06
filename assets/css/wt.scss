@@ -40,3 +40,62 @@ $secondary-color: #054175;
 		}
 	}
 }
+#hero-section {
+	background-image: url(../imgs/hero-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: calc(100dvh - 79px);
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(000, 0, 0, 0.4);
+		z-index: 0;
+	}
+	.container {
+		z-index: 2;
+		.hero-content {
+			display: flex;
+			flex-direction: column;
+			row-gap: 25px;
+			align-items: flex-start;
+			h1,
+			p {
+				margin-bottom: 0;
+			}
+			h1 {
+				text-transform: capitalize;
+				font-size: 64px;
+				line-height: 76px;
+			}
+			p {
+				font-size: 22px;
+			}
+			button {
+				text-transform: uppercase;
+				font-weight: 600;
+			}
+		}
+	}
+	.social-wrapper {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		.line {
+			display: block;
+			width: 1px;
+			height: 36.5dvh;
+			background-color: #fff;
+		}
+		.social-icons {
+			i {
+				color: #fff;
+				font-size: 20px;
+			}
+		}
+	}
+}

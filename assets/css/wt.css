@@ -1,19 +1,39 @@
-header {
+.site_header {
   background-color: #fff;
   border-bottom: 1px solid #054175;
 }
-header .site_logo {
-  width: 100px;
+.site_header .site_logo {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
-header .nav .nav-link {
+.site_header .nav .nav-link {
   color: #fff;
   text-transform: capitalize;
 }
-header .nav .nav-link:hover {
+.site_header .nav .nav-link:hover {
   color: #fff;
 }
-header .nav .nav-link.active {
+.site_header .nav .nav-link.active {
   font-weight: 500;
+}
+.site_header form {
+  position: relative;
+}
+.site_header form input {
+  padding-right: 20%;
+}
+.site_header form button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+}
+.site_header form button.submit-form {
+  right: 10%;
+  border-right: 1px solid #000;
+}
+.site_header form button.reset-form {
+  right: 2%;
 }/*# sourceMappingURL=wt.css.map */

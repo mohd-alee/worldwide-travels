@@ -1,10 +1,10 @@
 $primary-color: #07bdfe;
 $secondary-color: #054175;
-header {
+.site_header {
 	background-color: #fff;
 	border-bottom: 1px solid $secondary-color;
 	.site_logo {
-		width: 100px;
+		// width: 100px;
 		filter: brightness(0) invert(1);
 	}
 	.nav {
@@ -16,6 +16,26 @@ header {
 			}
 			&.active {
 				font-weight: 500;
+			}
+		}
+	}
+	form {
+		position: relative;
+		input {
+			padding-right: 20%;
+		}
+		button {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background: transparent;
+			border: 0;
+			&.submit-form {
+				right: 10%;
+				border-right: 1px solid #000;
+			}
+			&.reset-form {
+				right: 2%;
 			}
 		}
 	}

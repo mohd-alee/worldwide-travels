@@ -26,13 +26,14 @@
                         <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 offset-md-1">
+                <div class="col-md-3 offset-md-1 position-relative">
                     <form id="search-form" method="POST">
                         <input type="text" id="search-field" name="search" placeholder="Enter a destination or Keyword"
                             class="form-control">
                         <button class="submit-form" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         <button class="reset-form" type="reset"><i class="fa-solid fa-xmark"></i></button>
                     </form>
+                    <div id="search-results" class="d-flex flex-column flex-wrap gap-3 position-absolute"></div>
                 </div>
             </div>
         </div>

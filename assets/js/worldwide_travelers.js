@@ -17,7 +17,7 @@ function execute_search(e) {
 		alert("No input provided. Please check the field");
 	} else {
 		searchTerm = searchTerm.toLowerCase();
-		fetch("../../worldwide_travelers_api.json")
+		fetch("/worldwide-travels/worldwide_travelers_api.json")
 			.then((response) => {
 				return response.json();
 			})

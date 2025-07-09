@@ -42,7 +42,7 @@ function execute_search(e) {
 									resultImg.classList.add("img-fluid");
 									resultImg.setAttribute(
 										"src",
-										`/assets/imgs/api/${city.imageUrl}`
+										`/worldwide-travels/assets/imgs/api/${city.imageUrl}`
 									);
 
 									// Single Result Title
@@ -78,7 +78,7 @@ function execute_search(e) {
 								resultImg.classList.add("img-fluid");
 								resultImg.setAttribute(
 									"src",
-									`/assets/imgs/api/${item.imageUrl}`
+									`/worldwide-travels/assets/imgs/api/${item.imageUrl}`
 								);
 
 								// Single Result Title

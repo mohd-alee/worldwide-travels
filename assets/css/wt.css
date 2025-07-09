@@ -38,6 +38,8 @@
   right: 2%;
 }
 .site_header #search-results {
+  overflow: auto;
+  max-height: 643px;
   padding: 10px;
   background-color: #fff;
   border: 1px solid #000;

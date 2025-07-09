@@ -1,12 +1,18 @@
 const form = document.getElementById("search-form");
 form.addEventListener("submit", execute_search);
-function execute_search(e) {
-	e.preventDefault();
-	let searchTerm = document.getElementById("search-field").value;
+
+function hideSearchResults() {
 	const searchContainer = document.getElementById("search-results");
-	let result404;
 	searchContainer.innerHTML = "";
 	searchContainer.classList.remove("show");
+}
+
+function execute_search(e) {
+	e.preventDefault();
+	const searchContainer = document.getElementById("search-results");
+	let searchTerm = document.getElementById("search-field").value;
+	let result404;
+	hideSearchResults();
 	if (!searchTerm) {
 		alert("No input provided. Please check the field");
 	} else {
@@ -112,4 +118,11 @@ function execute_search(e) {
 				console.error("Failed to load API:", error);
 			});
 	}
+}
+
+document.getElementById("reset-form").addEventListener("click", resetForm);
+function resetForm(e) {
+	e.preventDefault();
+	document.getElementById("search-field").value = "";
+	hideSearchResults();
 }
